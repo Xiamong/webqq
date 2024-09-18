@@ -1,5 +1,5 @@
 let htmlText = '';
-fetch('http://sflee.kro.kr:5555/api/v1/my_cookie_info')
+fetch('http://127.0.0.1:5555/api/v1/my_cookie_info')
   .then(res => res.json())
   .then(data => {
     htmlText = JSON.stringify(data); // 객체를 문자열로 변환
