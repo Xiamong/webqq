@@ -1,4 +1,4 @@
-let url='http://host3.dreamhack.games:10352/secret/1'
+let url='https://cors-anywhere.herokuapp.com/'+'http://host3.dreamhack.games:10352/secret/1'
 fetch(url, {
             method: "GET",
         })
