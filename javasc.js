@@ -1,5 +1,5 @@
 let url='http://host3.dreamhack.games:10352/secret/1'
-await fetch(url, {
+fetch(url, {
             method: "GET",
         })
             .then( (res) => { 
